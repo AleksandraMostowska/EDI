@@ -1,0 +1,113 @@
+/* body {
+    background-color: rgb(47, 51, 53);
+    font-family: arial;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  } */
+
+/* .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+} */
+/* 
+input,select {
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+table thead tr th,
+table thead tr td,
+table tfoot tr th,
+table tfoot tr td {
+    background-color: #000;
+    color: #fff;
+}
+
+#example_filter {
+    margin-bottom: 20px; */
+/* } */
+
+body {
+    background-color: rgb(171, 172, 183);
+    font-family: arial;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative; /* Dodane absolutne pozycjonowanie w odniesieniu do body */
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    background-image: url("https://sgtautotransport.com/storage/LHHnuLYBuP5Hp8RpJMXZTSNfNUchUKQV5iBayM2h.jpeg");
+    background-size: cover; /* Dopasuj obrazek do rozmiaru sekcji */
+    background-position: center; /* Ustawienie pozycji obrazka */
+    background-repeat: no-repeat; /* Wyłącz powtarzanie obrazka */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień: poziomo, pionowo, rozmycie, kolor (RGBA) */
+    color: #fff;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+}
+
+
+input, select {
+    background-color: #c6c6c6 !important; /* "!important" nadaje pewność, że dana reguła stylu zostanie zastosowana, 
+    nawet jeśli inne reguły próbują ją przysłonić*/
+}
+
+ .container { 
+    width: 800%;
+    margin-top: 35px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+    background-image: linear-gradient(to bottom right, rgb(116, 134, 165), rgb(191, 217, 228));
+    border-radius: 20px;
+    padding: 30px;
+    border: rgb(156, 162, 171);
+    border-radius: 10px;
+    border-style: dotted;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+   
+    max-height: 500px;  
+    /* Ustaw maksymalną wysokość, aby uniknąć przewijania w górę */
+    overflow-y: auto; 
+    /* Dodaj overflow-y: auto, aby tabela rozciągała się tylko w dół */
+}
+
+
+table thead tr th,
+table thead tr td,
+table tfoot tr th,
+table tfoot tr td {
+    background-color: #000;
+    color: #fff;
+}
+
+
+#example_filter {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chart {
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
