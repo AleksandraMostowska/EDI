@@ -11,8 +11,10 @@ body {
 
 .header {
     text-align: center;
-    padding: 30px;
-    background-image: url("https://sgtautotransport.com/storage/LHHnuLYBuP5Hp8RpJMXZTSNfNUchUKQV5iBayM2h.jpeg");
+    height: 250px;
+    /* padding: 30px;
+    background-image: url("https://sgtautotransport.com/storage/LHHnuLYBuP5Hp8RpJMXZTSNfNUchUKQV5iBayM2h.jpeg"); */
+    background-image: url("https://wallpaperaccess.com/full/438419.jpg");
     background-size: cover; /* Dopasuj obrazek do rozmiaru sekcji */
     background-position: center; /* Ustawienie pozycji obrazka */
     background-repeat: no-repeat; /* Wyłącz powtarzanie obrazka */
@@ -23,6 +25,10 @@ body {
     top: 0; 
     left: 0; 
     right: 0; 
+}
+
+.header h1 {
+    margin-top: 100px;
 }
 
 
@@ -54,7 +60,7 @@ input, select {
     overflow-y: auto; 
     /* Dodaj overflow-y: auto, aby tabela rozciągała się tylko w dół */
     position: absolute;
-    top: 170px;
+    top: 300px;
 }
 
 
@@ -73,7 +79,7 @@ table tfoot tr td {
 
 .chart-container {
     position: absolute;
-    top: 1100px;
+    top: 1300px;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -95,7 +101,7 @@ table tfoot tr td {
 
 .second-chart-container {
     position: absolute;
-    top: 1850px;
+    top: 2000px;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
