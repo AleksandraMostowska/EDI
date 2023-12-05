@@ -1,9 +1,3 @@
-// fetch("https://my.api.mockaroo.com/car_data.json?key=3cb2df80").then((data)=>{
-//     return data.json();
-// }).then((objectData)=>{
-//     console.log(objectData)
-// })
-
 
 var xmlhttp = new XMLHttpRequest();
 var url = "https://my.api.mockaroo.com/car_data.json?key=3cb2df80";
@@ -31,8 +25,7 @@ xmlhttp.onreadystatechange = function() {
                 {
                     "data": "features",
                     "render": function(data, type, row) {
-                        // Wyświetl features[3-6]
-                        return data.slice(1, 4).join(", ");
+                        return data.slice(0, 4).join(", ");
                     }
                 }
             ]

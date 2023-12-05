@@ -1,40 +1,3 @@
-/* body {
-    background-color: rgb(47, 51, 53);
-    font-family: arial;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  } */
-
-/* .header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-} */
-/* 
-input,select {
-    background-color: #fff;
-}
-
-.container {
-    width: 100%;
-}
-
-table thead tr th,
-table thead tr td,
-table tfoot tr th,
-table tfoot tr td {
-    background-color: #000;
-    color: #fff;
-}
-
-#example_filter {
-    margin-bottom: 20px; */
-/* } */
-
 body {
     background-color: rgb(171, 172, 183);
     font-family: arial;
@@ -43,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    position: relative; /* Dodane absolutne pozycjonowanie w odniesieniu do body */
+    position: relative; 
 }
 
 .header {
@@ -69,22 +32,29 @@ input, select {
 }
 
  .container { 
-    width: 800%;
-    margin-top: 35px; 
+    width: 95%;
+    height: 800px;
+    /* margin-top: 35px; 
     margin-left: 20px; 
-    margin-right: 20px;
+    margin-right: 20px; */
     background-image: linear-gradient(to bottom right, rgb(116, 134, 165), rgb(191, 217, 228));
+    /* background-color: rgb(41, 44, 47); */
     border-radius: 20px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: rgb(156, 162, 171);
     border-radius: 10px;
     border-style: dotted;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-   
-    max-height: 500px;  
+    bottom: 200px;
+    /* max-height: 1000px;   */
     /* Ustaw maksymalną wysokość, aby uniknąć przewijania w górę */
     overflow-y: auto; 
     /* Dodaj overflow-y: auto, aby tabela rozciągała się tylko w dół */
+    position: absolute;
+    top: 170px;
 }
 
 
@@ -102,12 +72,38 @@ table tfoot tr td {
 }
 
 .chart-container {
+    position: absolute;
+    top: 1100px;
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 100px;
+    /* transition: transform 0.5s ease-in-out; */
 }
 
 .chart {
-    max-width: 700px;
-    width: 100%;
+    width: 1300px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.chart:hover {
+    transform: scale(1.1);
+    background-color: rgb(168, 182, 196);
+}
+
+.second-chart-container {
+    position: absolute;
+    top: 1850px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+.second-chart {
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
 }
