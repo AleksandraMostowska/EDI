@@ -26,9 +26,43 @@ body {
     left: 0; 
     right: 0; 
 }
+.introduction {
+    margin-top: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: rgb(0, 0, 0);
+    border-radius: 70px;
+    border-style: solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.introduction img {
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 250px;
+    height: 150px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.introduction img:hover {
+    transform: scale(1.1);
+}
+
+.caption {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; 
+}
 
 .header h1 {
+    font-size: 45px;
     margin-top: 100px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
 }
 
 
@@ -60,7 +94,7 @@ input, select {
     overflow-y: auto; 
     /* Dodaj overflow-y: auto, aby tabela rozciągała się tylko w dół */
     position: absolute;
-    top: 300px;
+    top: 500px;
 }
 
 
@@ -79,7 +113,7 @@ table tfoot tr td {
 
 .chart-container {
     position: absolute;
-    top: 1300px;
+    top: 1500px;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -101,9 +135,9 @@ table tfoot tr td {
 
 .second-chart-container {
     position: absolute;
-    top: 2000px;
+    top: 2200px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     padding-bottom: 100px;
 }
 
@@ -112,4 +146,10 @@ table tfoot tr td {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.second-chart:hover {
+    transform: scale(1.1);
+    background-color: rgb(168, 182, 196);
 }
