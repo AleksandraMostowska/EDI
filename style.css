@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    position: relative; 
+    position: relative;
 }
 
 .header {
@@ -15,17 +15,22 @@ body {
     /* padding: 30px;
     background-image: url("https://sgtautotransport.com/storage/LHHnuLYBuP5Hp8RpJMXZTSNfNUchUKQV5iBayM2h.jpeg"); */
     background-image: url("https://wallpaperaccess.com/full/438419.jpg");
-    background-size: cover; /* Dopasuj obrazek do rozmiaru sekcji */
-    background-position: center; /* Ustawienie pozycji obrazka */
-    background-repeat: no-repeat; /* Wyłącz powtarzanie obrazka */
+    background-size: cover;
+    /* Dopasuj obrazek do rozmiaru sekcji */
+    background-position: center;
+    /* Ustawienie pozycji obrazka */
+    background-repeat: no-repeat;
+    /* Wyłącz powtarzanie obrazka */
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień: poziomo, pionowo, rozmycie, kolor (RGBA) */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Dodaj cień: poziomo, pionowo, rozmycie, kolor (RGBA) */
     color: #fff;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
+
 .introduction {
     margin-top: 50px;
     position: absolute;
@@ -55,7 +60,7 @@ body {
     margin-bottom: 10px;
     text-align: center;
     font-size: 18px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .header h1 {
@@ -66,12 +71,14 @@ body {
 }
 
 
-input, select {
-    background-color: #c6c6c6 !important; /* "!important" nadaje pewność, że dana reguła stylu zostanie zastosowana, 
+input,
+select {
+    background-color: #c6c6c6 !important;
+    /* "!important" nadaje pewność, że dana reguła stylu zostanie zastosowana, 
     nawet jeśli inne reguły próbują ją przysłonić*/
 }
 
- .container { 
+.container {
     width: 95%;
     height: 800px;
     /* margin-top: 35px; 
@@ -91,7 +98,7 @@ input, select {
     bottom: 200px;
     /* max-height: 1000px;   */
     /* Ustaw maksymalną wysokość, aby uniknąć przewijania w górę */
-    overflow-y: auto; 
+    overflow-y: auto;
     /* Dodaj overflow-y: auto, aby tabela rozciągała się tylko w dół */
     position: absolute;
     top: 500px;
@@ -111,9 +118,42 @@ table tfoot tr td {
     margin-bottom: 20px;
 }
 
+
+.textcont {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, rgb(116, 134, 165), rgb(191, 217, 228));
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 200px;
+    position: absolute;
+    top: 1400px;
+    transition: transform 0.3s ease;
+}
+.textcont:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    font-size: 20px;
+}
+
 .chart-container {
     position: absolute;
-    top: 1500px;
+    top: 1900px;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -135,7 +175,7 @@ table tfoot tr td {
 
 .second-chart-container {
     position: absolute;
-    top: 2200px;
+    top: 2600px;
     text-align: center;
     margin-top: 40px;
     padding-bottom: 100px;
