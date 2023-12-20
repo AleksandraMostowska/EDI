@@ -1,8 +1,8 @@
-
 var xmlhttp = new XMLHttpRequest();
 var url = "https://my.api.mockaroo.com/car_data.json?key=3cb2df80";
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
+
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText);
@@ -31,15 +31,4 @@ xmlhttp.onreadystatechange = function() {
             ]
         });
     }
-};
-
-
-// var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//       document.getElementById("demo").innerHTML =
-//       this.responseText;
-//     }
-//   };
-//   xhttp.open("GET", "xmlhttp_info.txt", true);
-//   xhttp.send();
+}

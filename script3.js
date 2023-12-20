@@ -1,36 +1,3 @@
-// var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-// var yValues = [55, 49, 44, 24, 15];
-// var barColors = ["red", "green","blue","orange","brown"];
-
-// var xmlhttp = new XMLHttpRequest();
-// var url = "https://my.api.mockaroo.com/car_data.json?key=3cb2df80";
-// xmlhttp.open("GET", url, true);
-// xmlhttp.send();
-// xmlhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         var data = JSON.parse(this.responseText);
-        
-//     }
-//   }
-
-// new Chart("myChart", {
-//   type: "bar",
-//   data: {
-//     labels: xValues,
-//     datasets: [{
-//       backgroundColor: barColors,
-//       data: yValues
-//     }]
-//   },
-//   options: {
-//     legend: {display: false},
-//     title: {
-//       display: true,
-//       text: "World Wine Production 2018"
-//     }
-//   }
-// });
-
 var xValues = [];
 var yValues = [];
 var barColors = [];
@@ -72,46 +39,6 @@ xmlhttp.onreadystatechange = function() {
         updateChartDelayed();
     }
 }
-
-// function updatefunction updateChartDelayed() {
-// new Chart("myChart", {
-//         type: "bar",
-//         data: {
-//             labels: xValues,
-//             datasets: [{
-//                 label: 'Number of cars of specific mark.',
-//                 backgroundColor: barColors,
-//                 data: yValues
-//             }]
-//         },
-//         options: {
-//             legend: {display: false},
-//             title: {
-//                 display: true,
-//                 text: "Liczba samochodów według marek"
-//             },
-//             animation: {
-//                 onComplete: () => {
-//                     delayed = true;
-//                 },
-//                 delay: (context) => {
-//                     let delay = 0;
-//                     if (context.type === 'data' && context.mode === 'default' && !delayed) {
-//                         delay = context.dataIndex * 300 + context.datasetIndex * 100;
-//                     }
-//                     return delay;
-//                 },
-//             },
-//             scales: {
-//                 x: {
-//                     stacked: true,
-//                 },
-//                 y: {
-//                     stacked: true
-//                 }
-//             }
-//         }
-// });
 
 function updateChartDelayed() {
     new Chart("myChart", {
