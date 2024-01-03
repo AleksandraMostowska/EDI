@@ -120,6 +120,7 @@ table tfoot tr td {
 
 
 .textcont {
+    top: 1500px;
     width: 1300px;
     margin: 0 auto;
     padding-top: 30px;
@@ -132,7 +133,6 @@ table tfoot tr td {
     grid-template-columns: 1fr 1fr;
     column-gap: 200px;
     position: absolute;
-    top: 1400px;
     transition: transform 0.3s ease;
 }
 .textcont:hover {
@@ -149,11 +149,14 @@ img {
 
 .text {
     font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    padding: auto;
 }
 
 .chart-container {
     position: absolute;
-    top: 1900px;
+    top: 2000px;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -175,7 +178,7 @@ img {
 
 .second-chart-container {
     position: absolute;
-    top: 2600px;
+    top: 2700px;
     text-align: center;
     margin-top: 40px;
     padding-bottom: 100px;
