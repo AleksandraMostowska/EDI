@@ -29,6 +29,7 @@ body {
 }
 
 .introduction {
+    top: 40%;
     position: absolute;
     display: flex;
     flex-direction: row;
