@@ -92,7 +92,7 @@ select {
     overflow-y: auto;
     /*overflow-y: auto - tabela rozciągała się tylko w dół */
     position: absolute;
-    top: 68%;
+    top: 80%;
 }
 
 
@@ -111,7 +111,7 @@ table tfoot tr td {
 
 
 .textcont {
-    top: 210%;
+    top: 225%;
     width: 1300px;
     margin: 0 auto;
     padding-top: 20px;
@@ -132,7 +132,7 @@ table tfoot tr td {
 }
 
 .secondtextcont {
-    top: 380%;
+    top: 395%;
     width: 1300px;
     margin: 0 auto;
     padding-top: 30px;
@@ -168,7 +168,7 @@ img {
 
 .chart-container {
     position: absolute;
-    top: 275%;
+    top: 290%;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -189,7 +189,7 @@ img {
 
 .second-chart-container {
     position: absolute;
-    top: 420%;
+    top: 435%;
     text-align: center;
     margin-top: 40px;
     padding-bottom: 100px;
