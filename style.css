@@ -132,7 +132,7 @@ table tfoot tr td {
 }
 
 .secondtextcont {
-    top: 395%;
+    top: 410%;
     width: 1300px;
     margin: 0 auto;
     padding-top: 30px;
@@ -168,7 +168,7 @@ img {
 
 .chart-container {
     position: absolute;
-    top: 290%;
+    top: 300%;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -189,7 +189,7 @@ img {
 
 .second-chart-container {
     position: absolute;
-    top: 435%;
+    top: 460%;
     text-align: center;
     margin-top: 40px;
     padding-bottom: 100px;
